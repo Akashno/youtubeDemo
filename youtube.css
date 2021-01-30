@@ -1,0 +1,111 @@
+* {
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.topbar {
+  background-color: #202020;
+  height: 10vh;
+}
+.topbar input {
+  width: 35vw;
+  height: 35px;
+  background-color: #181818;
+  border: 0.01cm solid grey;
+}
+.topbar input:focus {
+  outline-style: solid;
+  outline-color: rgb(19, 122, 201);
+  color: white;
+}
+.topbar button {
+  border-radius: 0px 10px 10px 0px;
+  width: 40px;
+  height: 38px;
+  background-color: #383838;
+  border: none;
+  margin-left: -5px;
+  color: #989898;
+}
+.topbar .itemOne {
+  padding-left: 40px;
+}
+.topbar .itemOne img {
+  padding-left: 45px;
+}
+.topbar .itemTwo {
+  padding-top: 15px;
+  background-color: #202020;
+}
+.topbar .itemTwo .fa-microphone {
+  margin-left: 10px;
+  font-size: 22px;
+}
+.topbar .itemThree {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  background-color: #202020;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  padding-left: 10px;
+  background-color: #212121;
+  height: 130vh;
+  overflow: hidden;
+}
+.sidebar p {
+  color: grey;
+  font-size: 10px;
+  text-align: center;
+}
+
+.sidebar i {
+  margin-top: 25px;
+  color: grey;
+  display: block;
+}
+.sidebar i:hover {
+  color: white;
+  cursor: pointer;
+}
+.main {
+  scroll-behavior: smooth;
+  background-color: #181818;
+}
+.main .card-row {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.main .card-row img {
+  width: 268px;
+  height: 155px;
+}
+.main .card:hover {
+  background: #383838 !important;
+  cursor: pointer;
+}
+
+.main .card-row small {
+  color: grey;
+}
+
+.fa:hover {
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .itemThree {
+    padding-bottom: 20px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .itemTwo {
+  }
+  .main {
+    padding-top: 100px;
+  }
+}
